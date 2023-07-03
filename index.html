@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>happy Valentine's Day</title>
+</head>
+<body>
+    <div class="painel">
+     <h1>Happy Birthday</h1>
+
+     <img src="https://usagif.com/wp-content/uploads/2021/4fh5wi/flzanversariopt-3.gif" alt="cute cat">
+
+     <h2>Let's Celebrate Your Birthday?</h2>
+        <a href="https://www.youtube.com/shorts/tgOaNSOddF0"><button id="sim"> SIM!</button></a>
+        <button onmouseover="fuja()" id="nao"> Não! </button>
+       
+        <script>
+            function fuja(){
+            var botaoNao = document.getElementById("nao")
+
+            var larguraJanela = window.innerWidth;
+            var alturaJanela = window.innerHeight;
+
+            var maxX = larguraJanela - botaoNao.offsetWidth;
+            var maxY = alturaJanela - botaoNao.offsetHeight;
+
+            var aleatorioX = Math.floor(Math.random() * maxX);
+            var aleatorioY = Math.floor(Math.random() * maxY);
+
+            botaoNao.style.left = aleatorioX + "px";
+            botaoNao.style.top = aleatorioY + "px";
+
+            }
+        </script>
+
+    </div>
+</body>
+</html>
